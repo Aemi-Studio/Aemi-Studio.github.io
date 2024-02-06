@@ -1,0 +1,10 @@
+User-agent: Twitterbot
+Allow: /resources/images/*.opengraph.jpg
+
+User-agent: *
+Disallow: /resources/
+Allow: /resources/images/*.opengraph.jpg
+Allow: /favicon.ico
+Allow: /resources/images/favicon.*.png
+
+Sitemap: https://aemi.studio/sitemap.xml

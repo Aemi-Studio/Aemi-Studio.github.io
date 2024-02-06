@@ -55,6 +55,7 @@
 
 html,
 body {
+    background-color: #111111;
     height: auto;
     margin: 0;
     max-width: 100%;
