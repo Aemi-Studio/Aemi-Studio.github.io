@@ -3,6 +3,7 @@ Allow: /resources/images/*.opengraph.jpg
 
 User-agent: *
 Disallow: /resources/
+Allow: /resources/images/*.opengraph.jpg
 Allow: /favicon.ico
 Allow: /resources/images/favicon.*.png
 

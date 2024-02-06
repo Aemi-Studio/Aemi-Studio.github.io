@@ -9,6 +9,10 @@
   Access-Control-Allow-Origin: *
   Cross-Origin-Resource-Policy: cross-origin
 
+/*/*.opengraph.jpg
+  Access-Control-Allow-Origin: *
+  Cross-Origin-Resource-Policy: cross-origin
+
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
