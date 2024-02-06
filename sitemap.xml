@@ -1,0 +1,11 @@
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://aemi.studio/</loc>
+    </url>
+    <url>
+        <loc>https://aemi.studio/privacy/</loc>
+        <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+    </url>
+</urlset>

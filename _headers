@@ -1,0 +1,23 @@
+/resources/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/favicon.ico
+  Access-Control-Allow-Origin: *
+  Cross-Origin-Resource-Policy: cross-origin
+
+/*/favicon.*.png
+  Access-Control-Allow-Origin: *
+  Cross-Origin-Resource-Policy: cross-origin
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Access-Control-Allow-Origin: https://aemi.studio
+  X-UA-Compatible: IE=edge
+  Expires: Sun, 31 Dec 2025 23:59:59 GMT
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  Content-Security-Policy: default-src 'none' ; base-uri 'self' ; img-src 'self' data: ; frame-src 'self' ; media-src 'self' ; script-src 'self' 'unsafe-inline' 'strict-dynamic' ; style-src 'self' 'unsafe-inline' ; object-src 'none' ; font-src 'self' ; frame-ancestors 'self' ; form-action 'self' ; prefetch-src https://aemi.studio/ ; worker-src 'self' ; manifest-src 'self' ; child-src 'self' ;
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
