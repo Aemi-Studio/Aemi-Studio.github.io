@@ -1,7 +1,7 @@
 body > main > section {
     display: flex;
     flex-flow: column nowrap;
-    gap: 3rem;
+    gap: min(3rem,15vw);
 }
 
 body > main > section > header {
@@ -18,8 +18,22 @@ body > main > section > header :is(figure,img) {
 }
 
 body > main > section > header h1 {
-    font-size: 3.5em;
+    font-size: min(3.5rem,20vw);
     margin: 0.2em 0;
+}
+
+body > main > section > header h1 + a {
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+body > main > section > header h1 + a .particle,
+body > main > section > header h1 + a .logo-studio {
+    font-weight: 200;
+}
+
+body > main > section > header h1 + a .logo-aemi {
+    font-weight: 600;
 }
 
 body > main > section > header figure img {
