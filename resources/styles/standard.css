@@ -132,6 +132,9 @@ h6,
 .h6 {
     font-weight: 700;
     font-family: var(--header-cascade-font);
+    word-break: keep-all;
+    hyphens: none;
+    word-wrap: normal;
 }
 
 h1,

@@ -39,11 +39,12 @@ body > main  {
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     position: relative;
     overflow-y: scroll;
     padding: 2rem;
+    padding-block-start: 8rem;
     z-index: 2;
 }
 
@@ -55,7 +56,7 @@ body > main > section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-block-start: 4rem;
+    
 }
 
 body > main > section > h1 {
