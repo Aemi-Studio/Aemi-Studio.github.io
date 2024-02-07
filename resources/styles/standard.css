@@ -31,6 +31,7 @@
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
     font-variant-ligatures: contextual common-ligatures discretionary-ligatures;
+    font-feature-settings: 'liga' 1, 'calt' 1;
     hyphens: auto;
     letter-spacing: -0.011em;
     line-height: 1.5;
@@ -38,6 +39,11 @@
     text-rendering: optimizeLegibility;
     vertical-align: baseline;
     word-spacing: normal;
+
+    font-synthesis-small-caps: none;
+    font-synthesis-weight: none;
+    font-synthesis-style: none;
+    font-synthesis: none;
 }
 *,
 * ::before,

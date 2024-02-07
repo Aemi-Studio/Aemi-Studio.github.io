@@ -1,8 +1,1 @@
-@font-face {
-    font-family: "S";
-    src: url("./S-Regular.woff2") format("woff2");
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: geometricPrecision;
-}
-
+@font-face{font-family:"S";src:url("./S-Regular.woff2") format("woff2");font-style:normal;font-weight:400;text-rendering:geometricPrecision}

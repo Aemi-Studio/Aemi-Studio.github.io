@@ -48,6 +48,8 @@ body > main > section {
     flex: 0 1 100%;
     display: flex;
     gap: 2rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
@@ -55,12 +57,16 @@ body > main > section {
 }
 
 body > main > section > h1 {
-    font-size: min(10em,50vw);
+    font-size: min(10em,40vw);
     letter-spacing: -0.05em;
     line-height: 1;
     position: relative;
     margin: 0;
     padding: 0;
+}
+
+body > main > section :is(h2,h3,h4,h5,h6,p) {
+    max-width: min(80vw,70ch);
 }
 
 footer {
@@ -78,7 +84,7 @@ footer > ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    flex-flow: row;
+    flex-flow: row wrap;
     gap: 1rem;
     
 }
@@ -87,13 +93,13 @@ h1 > a {
     font-weight: 700 !important;
 }
 
-:not(h1) > a {
+footer :not(h1) > a {
     font-weight: 600;
     position: relative;
     display: block;
 }
 
-:not(h1) > a::after {
+footer :not(h1) > a::after {
     position: absolute;
     display: block;
     content: "";
@@ -107,8 +113,8 @@ h1 > a {
     transition: border-color 168ms ease-in-out;
 }
 
-:not(h1) > a:focus::after,
-:not(h1) > a:hover::after {
+footer :not(h1) > a:focus::after,
+footer :not(h1) > a:hover::after {
     border-color: currentColor;
     transition: border-color 168ms ease-in-out;
 }
@@ -118,3 +124,27 @@ h1 > a {
 .colophon-copy {font-size: 0.75em;font-weight: 200;}
 .colophon-aemi {font-weight: 700;}
 .colophon-studio {font-weight: 200;}
+
+
+i.icon {
+    display: inline-block;
+    font-style: normal;
+    position: relative;
+    line-height: 1;
+    -webkit-font-feature-settings: 'case' 1,'ccmp' 1;
+    -moz-font-feature-settings: 'case' 1,'ccmp' 1;
+    font-feature-settings: 'case' 1,'ccmp' 1;
+}
+
+i.icon.squared {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1;
+    -webkit-font-feature-settings: 'case' 1,'ccmp' 1, 'ss06' 1;
+    -moz-font-feature-settings: 'case' 1,'ccmp' 1, 'ss06' 1;
+    font-feature-settings: 'case' 1,'ccmp' 1, 'ss06' 1;
+}
+
+p :is(a,a:link) {
+    text-decoration: underline;
+}
