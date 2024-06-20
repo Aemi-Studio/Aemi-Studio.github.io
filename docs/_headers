@@ -23,5 +23,5 @@
   Cross-Origin-Embedder-Policy: require-corp
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin
-  Content-Security-Policy: default-src 'none' ; base-uri 'self' ; img-src 'self' data: ; frame-src 'self' ; media-src 'self' ; script-src 'none' ; style-src 'self' 'unsafe-inline' ; object-src 'none' ; font-src 'self' ; frame-ancestors 'self' ; form-action 'self' ; worker-src 'self' ; manifest-src 'self' ; child-src 'self' ;
+  Content-Security-Policy: default-src 'none' ; base-uri 'self' ; img-src 'self' data: ; frame-src 'self' ; media-src 'self' data: ; script-src 'none' ; style-src 'self' 'unsafe-inline' data: ; object-src 'none' ; font-src 'self' ; frame-ancestors 'self' ; form-action 'self' ; worker-src 'self' ; manifest-src 'self' ; child-src 'self' ;
   Permissions-Policy: geolocation=(), microphone=(), camera=()
