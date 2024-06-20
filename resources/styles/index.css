@@ -19,19 +19,36 @@ body::after {
     height: 100%;
     z-index: 0;
 }
+
 body::before {
-    background-image: radial-gradient(circle at top center, #333 10%, #111 125%);
+    background-color: black;
+    filter: url('#nf') saturate(0);
+    z-index: -1;
 }
 
-body::after {
-    background-image: url("/resources/images/grain.webp");
-    background-position: center center;
-    background-clip: border-box;
+body {
     background-size: cover;
-    background-origin: border-box;
-    mix-blend-mode: hard-light;
-    z-index: 1;
-    opacity: 0.3;
+    background-position: center;
+}
+
+@media not (color-gamut: p3) {
+    body {
+        background: radial-gradient(
+            circle at 50% -20%,
+            #b3b3b3cc -10%,
+            #141414cc 100%
+        );
+    }
+}
+
+@media (color-gamut: p3) {
+    body {
+        background: radial-gradient(
+            circle at 50% -20%,
+            color(display-p3 0.7 0.7 0.7 / 0.8) -10%,
+            color(display-p3 0.08 0.08 0.08 / 0.8) 100%
+        );
+    }
 }
 
 body > main  {
@@ -143,6 +160,23 @@ i.icon {
     font-feature-settings: 'case' 1,'ccmp' 1;
 }
 
+figure {
+    line-height: 0;
+    position: relative;
+}
+
+figure::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
 i.icon.squared {
     font-weight: bold;
     font-size: 1.2em;
@@ -154,4 +188,13 @@ i.icon.squared {
 
 p :is(a,a:link) {
     text-decoration: underline;
+}
+
+.vstack > * {
+    display: block;
+    margin-inline: auto;
+}
+
+[hidden] {
+    display: none;
 }
