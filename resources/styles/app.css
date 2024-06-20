@@ -17,18 +17,27 @@ body > main > section > header :is(figure,img) {
     margin: 0;
 }
 
+body > main > section > header figure {
+    aspect-ratio: 1;
+}
+
 body > main > section > header h1 {
     font-size: min(3.5rem,20vw);
     margin: 0.2em 0;
 }
 
-body > main > section > header .app-name {
-    line-height: 0.65;
+body > main > section > header h2 {
+    font-size: min(2.05rem,15vw);
+    margin: 0.2em 0;
+}
+
+body > main > section > header .app-info {
+    display: block;
 }
 
 body > main > section > header .app-tagline {
     font-weight: 300;
-    font-size: 0.58em;
+    margin-block-start: -0.5em;
     letter-spacing: 0.0125em;
 }
 
@@ -48,6 +57,8 @@ body > main > section > header h1 + a .logo-aemi {
 }
 
 body > main > section > header figure img {
+    aspect-ratio: 1;
+    width: 192px;
     max-width: min(50vw,192px);
     filter: drop-shadow(0 1em 1em rgba(0,0,0,0.4));
 }
