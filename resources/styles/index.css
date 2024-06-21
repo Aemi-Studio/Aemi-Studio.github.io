@@ -1,56 +1,3 @@
-body {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    max-width: 100vw;
-    min-height: 100vh;
-    overflow-y: hidden;
-    background-color: #111111;
-}
-
-body::before,
-body::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-body::before {
-    background-color: black;
-    filter: url('#nf') saturate(0);
-    z-index: -1;
-}
-
-body {
-    background-size: cover;
-    background-position: center;
-}
-
-@media not (color-gamut: p3) {
-    body {
-        background: radial-gradient(
-            circle at 50% -20%,
-            #b3b3b3cc -10%,
-            #141414cc 100%
-        );
-    }
-}
-
-@media (color-gamut: p3) {
-    body {
-        background: radial-gradient(
-            circle at 50% -20%,
-            color(display-p3 0.7 0.7 0.7 / 0.8) -10%,
-            color(display-p3 0.08 0.08 0.08 / 0.8) 100%
-        );
-    }
-}
-
 body > main  {
     min-height: 100vh;
     height: 100vh;
@@ -63,6 +10,8 @@ body > main  {
     padding: 2rem;
     padding-block-start: 8rem;
     z-index: 2;
+    width: 100vw;
+    max-width: 100vw;
 }
 
 body > main > section {
@@ -73,7 +22,8 @@ body > main > section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+    width: 100%;
+    max-width: 100vw;
 }
 
 body > main > section > h1 {

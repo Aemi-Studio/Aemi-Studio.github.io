@@ -1,8 +1,9 @@
 /testflight/pasitea https://testflight.apple.com/join/OFtGX8Oy 301
+/testflight/cami https://testflight.apple.com/join/9CWelfzJ 301
+/testflight/stations https://testflight.apple.com/join/uzevY3vq 301
 
 /calendar /cami 301
 /cami-calendar /cami 301
-/testflight/cami https://testflight.apple.com/join/9CWelfzJ 301
 /cami/testflight https://testflight.apple.com/join/9CWelfzJ 301
 /cami/app-store https://apps.apple.com/app/cami-calendar/id6472549901 301
 
@@ -11,3 +12,8 @@
 /music /stations 301
 /stations/testflight https://testflight.apple.com/join/uzevY3vq 301
 /stations/app-store https://testflight.apple.com/join/uzevY3vq 301
+
+/pasitea/testflight https://testflight.apple.com/join/OFtGX8Oy 301
+/pasitea/app-store https://testflight.apple.com/join/OFtGX8Oy 301
+/lab/pasitea/testflight https://testflight.apple.com/join/OFtGX8Oy 301
+/lab/pasitea/app-store https://testflight.apple.com/join/OFtGX8Oy 301

@@ -61,16 +61,86 @@
 
 html,
 body {
-    background-color: #111111;
     height: auto;
     margin: 0;
     max-width: 100%;
     padding: 0;
+    background-color: black;
 }
 
 html {
     font-size: 1rem;
 }
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+body::before,
+body::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+body::before {
+    background-color: black;
+    filter: url('#nf') saturate(0);
+    z-index: -1;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+}
+
+@media not (color-gamut: p3) {
+    body {
+        background: radial-gradient(
+            circle at 50% -20%,
+            #b3b3b3cc -10%,
+            #141414cc 100%
+        );
+        background: radial-gradient(
+            circle at 50% -20%,
+            oklch(76.68% 0 0 / 80%) -10%,
+            oklch(19.13% 0 0 / 80%) 100%
+        );
+        background: radial-gradient(
+            circle at 50% -20%,
+            color(display-p3 0.7 0.7 0.7 / 0.8) -10%,
+            color(display-p3 0.08 0.08 0.08 / 0.8) 100%
+        );
+    }
+}
+
+@media (color-gamut: p3) {
+    body {
+        background: radial-gradient(
+            circle at 50% -20%,
+            color(display-p3 0.7 0.7 0.7 / 0.8) -10%,
+            color(display-p3 0.08 0.08 0.08 / 0.8) 100%
+        );
+    }
+}
+
+.body-font {
+    font-size: 1rem;
+    font-family: var(--body-cascade-font) !important;
+    letter-spacing: -0.011em;
+    line-height: 1.5;
+}
+
 
 head,
 meta,
