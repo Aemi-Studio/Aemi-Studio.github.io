@@ -1,22 +1,13 @@
 :root {
 
-    --apple-stack: -apple-system, BlinkMacSystemFont;
-    --system-stack: Lato, Roboto, system-ui, "Helvetica Neue", HelveticaNeue,
-        Helvetica, Arial, sans-serif;
-    --fallback-font-stack: var(--apple-stack), var(--system-stack);
-    --mono-system-stack: "SFMono-Regular", "Roboto Mono", "Inconsolata", "Menlo",
-        "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Consolas", Courier,
-        "Courier New", monospace;
-    --mono-stack: "JetBrains Mono", "Fira Code", "Hack", var(--mono-system-stack);
-    --body-font: "IVariable";
-    --body-cascade-font: var(--body-font), "IVariable", "I", var(--fallback-font-stack);
-    --header-font: "ID";
-    --header-cascade-font: var(--header-font), "ID", var(--body-cascade-font);
-    --icon-font: "S";
-    --icon-cascade-font: var(--icon-font), "S";
+    --base-font-family: InterVariable, "Inter var", Inter, -apple-system, BlinkMacSystemFont, Lato, Roboto, system-ui, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+
+    --head-font-family: "Inter Display", InterVariable, "Inter var", Inter, -apple-system, BlinkMacSystemFont, Lato, Roboto, system-ui, "Helvetica Neue", HelveticaNeue,Helvetica, Arial, sans-serif;
+
+    --mono-font-family: JetBrainsMonoVariable, "JetBrains Mono", "SFMono-Regular", "Roboto Mono", "Inconsolata", "Menlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Consolas", Courier, "Courier New", monospace;
 
 
-    font-family: var(--body-cascade-font);
+    font-family: var(--base-font-family);
 
 
     kerning: auto;
@@ -156,7 +147,7 @@ body {
 
 .body-font {
     font-size: 1rem;
-    font-family: var(--body-cascade-font) !important;
+    font-family: var(--base-font-family) !important;
     letter-spacing: -0.011em;
     line-height: 1.5;
 }
@@ -221,7 +212,7 @@ h5,
 h6,
 .h6 {
     font-weight: 700;
-    font-family: var(--header-cascade-font);
+    font-family: var(--head-font-family);
     word-break: keep-all;
     hyphens: none;
     word-wrap: normal;

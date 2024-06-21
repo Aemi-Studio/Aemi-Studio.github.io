@@ -104,7 +104,7 @@ footer :not(h1) > a:hover::after {
 }
 
 
-.colophon {font-family: var(--header-cascade-font); }
+.colophon {font-family: var(--head-font-family); }
 .colophon-copy {font-size: 0.75em;font-weight: 200;}
 .colophon-aemi {font-weight: 700;}
 .colophon-studio {font-weight: 200;}
