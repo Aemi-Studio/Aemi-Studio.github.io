@@ -40,29 +40,29 @@ body > main > section > header h2 {
     margin: 0.2em 0;
 }
 
-body > main > section ul.app-list {
+ul.app-list {
     margin-block: 4em;
 }
 
-body > main > section ul.app-list,
-body > main > section ul.app-list li {
+ul.app-list,
+ul.app-list li {
     list-style: none;
     list-style-type: none;
     padding: 0;
     max-inline-size: 400pt;
 }
 
-body > main > section ul.app-list li:not(:first-child) {
+ul.app-list li:not(:first-child) {
     margin-block-start: 3em
 }
 
-body > main > section ul.app-list li a {
+ul.app-list li a {
     display: flex;
     flex-flow: row nowrap;
     gap: 1.5em;
 }
 
-body > main > section .lab-app-info {
+.lab-app-info {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -71,12 +71,12 @@ body > main > section .lab-app-info {
 }
 
 @media (max-width: 480pt) {
-    body > main > section ul.app-list li a {
+    ul.app-list li a {
         display: flex;
         flex-flow: column nowrap;
         gap: 1.5em;
     }
-    body > main > section .lab-app-info {
+    .lab-app-info {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -85,27 +85,26 @@ body > main > section .lab-app-info {
     }
 }
 
-body > main > section :is(.lab-app-info, .developer) :is(h1,h2,h3,h4) {
+:is(.lab-app-info, .developer) :is(h1,h2,h3,h4) {
     margin: 0;
 }
 
-body > main > section .lab-app-info h3 {
+.lab-app-info h3 {
     font-weight: normal;
 }
 
-
-body > main > section ul.app-list img {
+ul.app-list img {
     aspect-ratio: 1;
     width: 96px;
     max-width: min(50vw,96px);
     filter: drop-shadow(0 1em 1em rgba(0,0,0,0.4));
 }
 
-body > main > section > header .app-info {
+.app-info {
     display: block;
 }
 
-body > main > section > header .app-tagline {
+.app-tagline {
     font-weight: 300;
     margin-block-start: -0.5em;
     letter-spacing: 0.0125em;
@@ -271,13 +270,13 @@ a.app-store:hover {
     transition: box-shadow 200ms ease-in-out;
 }
 
-body > main > section ul.developers,
-body > main > section ul.developers li {
+ul.developers,
+ul.developers li {
     padding: 0;
     list-style-type: none;
 }
 
-body > main > section ul.developers {
+ul.developers {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300pt);
     justify-content: center;
@@ -288,7 +287,7 @@ body > main > section ul.developers {
     max-width: 100%;
 }
 
-body > main > section .developers .developer {
+.developers .developer {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.1);
@@ -311,6 +310,7 @@ body > main > section .developers .developer {
     box-shadow: 0 0.2em 1em -.3em rgba(0, 0, 0, 0.2);
     position: relative;
 }
+
 .developer figure::after {
     content: "";
     display: block;
@@ -347,10 +347,10 @@ body > main > section .developers .developer {
 }
 
 @media (max-width: 320pt) {
-    body > main > section ul.developers {
+    ul.developers {
         grid-template-columns: repeat(auto-fit, 100%);
     }
-    body > main > section .developers .developer {
+    .developers .developer {
         flex-flow: column nowrap;
         justify-content: center;
         align-content: center;

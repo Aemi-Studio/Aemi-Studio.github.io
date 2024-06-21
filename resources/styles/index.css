@@ -39,6 +39,16 @@ body > main > section :is(h2,h3,h4,h5,h6,p) {
     max-width: min(80vw,70ch);
 }
 
+body > main > section > .sub-section {
+    max-width: 100%;
+}
+body > main > section > .sub-section > * {
+    margin-inline: auto;
+}
+body > main > section > .sub-section .sub-section-title {
+    margin-block-end: 1.5em;
+}
+
 footer {
     display: flex;
     flex-flow: column nowrap;
