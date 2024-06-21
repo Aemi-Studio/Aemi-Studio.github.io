@@ -1,3 +1,6 @@
+
+
+
 body > main > section {
     display: flex;
     flex-flow: column nowrap;
@@ -33,6 +36,14 @@ body > main > section > header .app-info > :not(:only-child) {
     align-content: start;
     text-align: start;
     width: 100%;
+}
+
+@media (max-width: 408pt) {
+    body > main > section > header .app-info > :not(:only-child) {
+        align-content: center;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 body > main > section > header h2 {

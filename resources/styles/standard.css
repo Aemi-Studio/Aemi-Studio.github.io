@@ -104,6 +104,26 @@ body {
     background-position: center;
 }
 
+.srt {
+	clip-path: polygon(0 0, 1px 0, 1px 1px, 0 1px);
+	display: block;
+	height: 1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.srt:focus {
+	clip-path: unset;
+	font-size: 1rem;
+	height: auto;
+	text-decoration: none;
+	width: auto;
+	z-index: 100000;
+}
+
 @media not (color-gamut: p3) {
     body {
         background: radial-gradient(
