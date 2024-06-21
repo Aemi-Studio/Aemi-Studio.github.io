@@ -20,4 +20,16 @@
         <loc>https://aemi.studio/stations/</loc>
         <lastmod>2024-06-20T00:00:00+00:00</lastmod>
     </url>
+    <url>
+        <loc>https://aemi.studio/lab/</loc>
+        <lastmod>2024-06-20T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://aemi.studio/lab/pasitea/</loc>
+        <lastmod>2024-06-20T00:00:00+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://aemi.studio/lab/bilbary/</loc>
+        <lastmod>2024-06-20T00:00:00+00:00</lastmod>
+    </url>
 </urlset>

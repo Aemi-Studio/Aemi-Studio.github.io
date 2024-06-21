@@ -13,7 +13,14 @@
 /stations/testflight https://testflight.apple.com/join/uzevY3vq 301
 /stations/app-store https://testflight.apple.com/join/uzevY3vq 301
 
+/pasitea /lab/pasitea 301
 /pasitea/testflight https://testflight.apple.com/join/OFtGX8Oy 301
 /pasitea/app-store https://testflight.apple.com/join/OFtGX8Oy 301
 /lab/pasitea/testflight https://testflight.apple.com/join/OFtGX8Oy 301
 /lab/pasitea/app-store https://testflight.apple.com/join/OFtGX8Oy 301
+
+/bilbary /lab/bilbary 301
+/bilbary/testflight https://testflight.apple.com/join/CRZpt2m3 301
+/bilbary/app-store https://testflight.apple.com/join/CRZpt2m3 301
+/lab/bilbary/testflight https://testflight.apple.com/join/CRZpt2m3 301
+/lab/bilbary/app-store https://testflight.apple.com/join/CRZpt2m3 301
