@@ -24,7 +24,7 @@ body>main>section header figure {
     aspect-ratio: 1;
 }
 
-body>main>section>header h1 {
+body>main>section>header :is(h1,.h1) {
     font-size: min(3.5rem, 20vw);
     margin: 0.2em 0;
 }
@@ -94,11 +94,11 @@ ul.app-list li a {
     }
 }
 
-:is(.lab-app-info, .developer) :is(h1, h2, h3, h4) {
+:is(.lab-app-info, .developer) :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4) {
     margin: 0;
 }
 
-.lab-app-info h3 {
+.lab-app-info :is(h3,.h3) {
     font-weight: normal;
 }
 
@@ -120,17 +120,17 @@ ul.app-list img {
 }
 
 
-body>main>section>header h1+a {
+body>main>section>header :is(h1,.h1)+a {
     font-size: 1.5em;
     line-height: 1;
 }
 
-body>main>section>header h1+a .particle,
-body>main>section>header h1+a .logo-studio {
+body>main>section>header :is(h1,.h1)+a .particle,
+body>main>section>header :is(h1,.h1)+a .logo-studio {
     font-weight: 200;
 }
 
-body>main>section>header h1+a .logo-aemi {
+body>main>section>header :is(h1,.h1)+a .logo-aemi {
     font-weight: 600;
 }
 
