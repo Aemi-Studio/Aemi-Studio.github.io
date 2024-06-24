@@ -150,6 +150,7 @@ body {
     font-family: var(--base-font-family) !important;
     letter-spacing: -0.011em;
     line-height: 1.5;
+    font-weight: 400;
 }
 
 

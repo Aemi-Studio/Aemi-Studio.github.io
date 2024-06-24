@@ -78,6 +78,10 @@ ul.app-list li a {
     gap: 0.5em;
 }
 
+.lab-app-info p {
+    margin: 0;
+}
+
 @media (max-width: 480pt) {
     ul.app-list li a {
         display: flex;
