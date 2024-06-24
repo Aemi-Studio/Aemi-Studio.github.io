@@ -1,16 +1,13 @@
-
-
-
-body > main > section {
+body>main>section {
     display: flex;
     flex-flow: column nowrap;
-    gap: min(3rem,15vw);
+    gap: min(3rem, 15vw);
     max-width: 100%;
     width: 100%;
     position: relative;
 }
 
-body > main > section > header {
+body>main>section>header {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -18,36 +15,36 @@ body > main > section > header {
     gap: 2rem;
 }
 
-body > main > section :is(figure,img) {
+body>main>section :is(figure, img) {
     padding: 0;
     margin: 0;
 }
 
-body > main > section header figure {
+body>main>section header figure {
     aspect-ratio: 1;
 }
 
-body > main > section > header h1 {
-    font-size: min(3.5rem,20vw);
+body>main>section>header h1 {
+    font-size: min(3.5rem, 20vw);
     margin: 0.2em 0;
 }
 
-body > main > section > header .app-info > :not(:only-child) {
+body>main>section>header .app-info> :not(:only-child) {
     align-content: start;
     text-align: start;
     width: 100%;
 }
 
 @media (max-width: 408pt) {
-    body > main > section > header .app-info > :not(:only-child) {
+    body>main>section>header .app-info> :not(:only-child) {
         align-content: center;
         text-align: center;
         width: 100%;
     }
 }
 
-body > main > section > header h2 {
-    font-size: min(2.05rem,15vw);
+body>main>section>header h2 {
+    font-size: min(2.05rem, 15vw);
     margin: 0.2em 0;
 }
 
@@ -87,6 +84,7 @@ ul.app-list li a {
         flex-flow: column nowrap;
         gap: 1.5em;
     }
+
     .lab-app-info {
         display: flex;
         flex-flow: column nowrap;
@@ -96,7 +94,7 @@ ul.app-list li a {
     }
 }
 
-:is(.lab-app-info, .developer) :is(h1,h2,h3,h4) {
+:is(.lab-app-info, .developer) :is(h1, h2, h3, h4) {
     margin: 0;
 }
 
@@ -107,8 +105,8 @@ ul.app-list li a {
 ul.app-list img {
     aspect-ratio: 1;
     width: 96px;
-    max-width: min(50vw,96px);
-    filter: drop-shadow(0 1em 1em rgba(0,0,0,0.4));
+    max-width: min(50vw, 96px);
+    filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.4));
 }
 
 .app-info {
@@ -122,37 +120,37 @@ ul.app-list img {
 }
 
 
-body > main > section > header h1 + a {
+body>main>section>header h1+a {
     font-size: 1.5em;
     line-height: 1;
 }
 
-body > main > section > header h1 + a .particle,
-body > main > section > header h1 + a .logo-studio {
+body>main>section>header h1+a .particle,
+body>main>section>header h1+a .logo-studio {
     font-weight: 200;
 }
 
-body > main > section > header h1 + a .logo-aemi {
+body>main>section>header h1+a .logo-aemi {
     font-weight: 600;
 }
 
-body > main > section > header figure img {
+body>main>section>header figure img {
     aspect-ratio: 1;
     width: 192px;
-    max-width: min(50vw,192px);
-    filter: drop-shadow(0 1em 1em rgba(0,0,0,0.4));
+    max-width: min(50vw, 192px);
+    filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.4));
 }
 
-body > main > section > .links {
+body>main>section>.links {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    max-width: min(80vw,70ch);
+    max-width: var(--content-width);
 }
 
-body > main > section > .links a:not(.app-store) {
+body>main>section>.links a:not(.app-store) {
     border-radius: 0.5em;
     display: flex;
     flex-flow: row nowrap;
@@ -164,7 +162,7 @@ body > main > section > .links a:not(.app-store) {
     box-shadow: 0 0.4em 1.2em -.7em rgba(0, 0, 0, 0.5);
     -webkit-backdrop-filter: blur(2em);
     backdrop-filter: blur(2em);
-    border: 0.04em solid rgba(255,255,255,0.3); 
+    border: 0.04em solid rgba(255, 255, 255, 0.3);
     color: #ffffffC0;
     transform: scale(1);
     filter: brightness(1);
@@ -180,10 +178,10 @@ body > main > section > .links a:not(.app-store) {
         transform 150ms ease-in-out;
 }
 
-body > main > section > .links a:not([disabled]):not(.app-store):hover {
+body>main>section>.links a:not([disabled]):not(.app-store):hover {
     color: #ffffffff;
-    background-color:rgba(0, 0, 0, 0.1);
-    border-color: rgba(255,255,255,1);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 1);
     border-width: 0.02em;
     box-shadow: 0 0.2em .6em -.4em rgba(0, 0, 0, 0.7);
     transition:
@@ -197,7 +195,7 @@ body > main > section > .links a:not([disabled]):not(.app-store):hover {
         transform 150ms ease-in-out;
 }
 
-body > main > section > .links a:not([disabled]):not(.app-store):active {
+body>main>section>.links a:not([disabled]):not(.app-store):active {
     opacity: 0.8;
     transform: scale(0.975);
     filter: brightness(0.9);
@@ -212,11 +210,11 @@ body > main > section > .links a:not([disabled]):not(.app-store):active {
         transform 150ms ease-in-out;
 }
 
-body > main > section > .links a:focus:not(.app-store) {
+body>main>section>.links a:focus:not(.app-store) {
     outline: none;
 }
 
-body > main > section > .links a[disabled]:not(.app-store) {
+body>main>section>.links a[disabled]:not(.app-store) {
     filter: brightness(0.5);
 }
 
@@ -229,12 +227,12 @@ a i.icon.squared::before {
     display: block;
     content: '';
     aspect-ratio: 1 / 1;
-    width:calc(100% + 0.5em);
+    width: calc(100% + 0.5em);
     z-index: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border: 0.1em solid currentColor;
     border-radius: 0.25em;
 }
@@ -244,12 +242,12 @@ a:not(.app-store) i.icon.squared::before {
     display: block;
     content: '';
     aspect-ratio: 1 / 1;
-    width:calc(100% + 0.5em);
+    width: calc(100% + 0.5em);
     z-index: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border: 0.1em solid currentColor;
     border-radius: 0.25em;
 }
@@ -266,7 +264,7 @@ a.app-store {
 a.app-store::before {
     content: "";
     position: absolute;
-    top:0;
+    top: 0;
     bottom: 0;
     height: 100%;
     width: 100%;
@@ -294,8 +292,9 @@ ul.developers {
     justify-items: center;
     align-content: center;
     gap: 1.5rem;
-    width: 900pt;
+    width: var(--wide-content-width);
     max-width: 100%;
+    margin:  0;
 }
 
 .developers .developer {
@@ -306,7 +305,7 @@ ul.developers {
     flex-flow: row nowrap;
     align-items: center;
     gap: 1rem;
-    border: 0.1pt solid rgba(255,255,255,0.2);
+    border: 0.1pt solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 0.2em .75em -.3em rgba(0, 0, 0, 0.5);
     border-radius: 1em;
     padding: 1rem;
@@ -361,6 +360,7 @@ ul.developers {
     ul.developers {
         grid-template-columns: repeat(auto-fit, 100%);
     }
+
     .developers .developer {
         flex-flow: column nowrap;
         justify-content: center;
@@ -370,6 +370,7 @@ ul.developers {
     .developer .person-information {
         text-align: center;
     }
+
     .person-links {
         justify-content: center;
     }
@@ -422,4 +423,134 @@ a.icon.network::before {
 
 .icon.network[href^='https://bento.me']::before {
     background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.5" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><path d="M1.512,10.176c-0.825,-0.646 -1.238,-0.969 -1.393,-1.342l-0.102,-0.507l-0,-2.079c-0,-0 6.638,5.895 8,5.894c1.361,-0.001 7.966,-5.894 7.966,-5.894l0,2.082c0,0.17 -0.034,0.341 -0.102,0.504c-0.155,0.373 -0.568,0.696 -1.393,1.342l-4.129,3.231l0,0c-0.826,0.647 -1.239,0.97 -1.715,1.091c-0.418,0.106 -0.87,0.106 -1.288,-0c-0.476,-0.121 -0.889,-0.444 -1.715,-1.091l-4.129,-3.231Z" style="fill-opacity:0.8;"/><path d="M1.512,8.094c-0.825,-0.646 -1.238,-0.969 -1.393,-1.342c-0.136,-0.328 -0.136,-0.681 -0,-1.009c0.155,-0.372 0.568,-0.695 1.393,-1.342l4.129,-3.231c0.826,-0.646 1.239,-0.969 1.715,-1.09c0.418,-0.107 0.87,-0.107 1.288,-0c0.476,0.121 0.889,0.444 1.715,1.09l4.129,3.231c0.825,0.647 1.238,0.97 1.393,1.342c0.136,0.328 0.136,0.681 -0,1.009c-0.155,0.373 -0.568,0.696 -1.393,1.342l-4.129,3.231c-0.826,0.646 -1.239,0.969 -1.715,1.09c-0.418,0.107 -0.87,0.107 -1.288,0c-0.476,-0.121 -0.889,-0.444 -1.715,-1.09l-4.129,-3.231Zm4.719,-4l0.589,0.461c0.413,0.323 0.62,0.485 0.858,0.545c0.209,0.054 0.435,0.054 0.644,0c0.238,-0.06 0.445,-0.222 0.858,-0.545l0.589,-0.461c0.413,-0.324 0.62,-0.485 0.697,-0.671c0.068,-0.164 0.068,-0.341 0,-0.505c-0.077,-0.186 -0.284,-0.348 -0.697,-0.671l-0.589,-0.461c-0.413,-0.323 -0.62,-0.485 -0.858,-0.545c-0.209,-0.054 -0.435,-0.054 -0.644,-0c-0.238,0.06 -0.445,0.222 -0.858,0.545l-0.589,0.461c-0.413,0.323 -0.62,0.485 -0.697,0.671c-0.068,0.164 -0.068,0.341 -0,0.505c0.077,0.186 0.284,0.347 0.697,0.671Zm3.932,3.077l0.589,0.461c0.413,0.323 0.62,0.485 0.858,0.546c0.209,0.053 0.435,0.053 0.644,-0c0.238,-0.061 0.445,-0.223 0.857,-0.546l0.59,-0.461c0.413,-0.323 0.62,-0.485 0.697,-0.671c0.068,-0.164 0.068,-0.341 -0,-0.505c-0.077,-0.186 -0.284,-0.347 -0.697,-0.671l-0.59,-0.461c-0.412,-0.323 -0.619,-0.485 -0.857,-0.545c-0.209,-0.054 -0.435,-0.054 -0.644,-0c-0.238,0.06 -0.445,0.222 -0.858,0.545l-0.589,0.461c-0.413,0.324 -0.62,0.485 -0.697,0.671c-0.068,0.164 -0.068,0.341 -0,0.505c0.077,0.186 0.284,0.348 0.697,0.671Zm-7.864,-0l4.521,3.538c0.413,0.324 0.62,0.485 0.858,0.546c0.209,0.053 0.435,0.053 0.644,-0c0.238,-0.061 0.445,-0.222 0.858,-0.546l0.589,-0.461c0.413,-0.323 0.62,-0.485 0.697,-0.671c0.068,-0.164 0.068,-0.34 0,-0.504c-0.077,-0.187 -0.284,-0.348 -0.697,-0.671l-4.521,-3.539c-0.413,-0.323 -0.62,-0.485 -0.858,-0.545c-0.209,-0.054 -0.435,-0.054 -0.644,-0c-0.238,0.06 -0.445,0.222 -0.857,0.545l-0.59,0.461c-0.413,0.324 -0.62,0.485 -0.697,0.671c-0.068,0.164 -0.068,0.341 0,0.505c0.077,0.186 0.284,0.348 0.697,0.671Z"/></g></svg>')
+}
+
+#gallery label,
+#gallery input[type="checkbox"],
+#gallery,
+#gallery li,
+#gallery :is(figure, img, video) {
+    padding: 0;
+    margin: 0;
+}
+#gallery :is(figure, img, video) {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+#gallery {
+    display: grid;
+    grid-auto-flow: column;
+    max-width: var(--wide-content-width);
+    width: 100%;
+    align-items: center;
+    position: relative;
+    overflow: scroll;
+    padding: 0;
+    line-height: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    border-radius: 0.5rem;
+}
+
+ul#gallery,
+#gallery li {
+    list-style-type: none;
+    margin: 0;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+#gallery li {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+
+#gallery input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+}
+
+#gallery :is(figure img, figure video) {
+    border-radius: 0.5rem;
+    filter: drop-shadow(0 0.25rem 0.5rem rgba(0, 0, 0, 0.1));
+}
+
+#gallery input[type="checkbox"]+ :is(figure, figure img, figure video) {
+    display: block;
+    height: 100%;
+    width: 100%;
+    cursor: zoom-in;
+}
+
+#gallery input[type="checkbox"]:checked+figure :is(img,video),
+#gallery input[type="checkbox"]:checked+figure::before {
+    cursor: zoom-out;
+}
+
+#gallery input[type="checkbox"]:checked+figure :is(img,video) {
+    --maxwidth: calc(100vw - 1rem)
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    height: 1024px;
+    width: auto;
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100vh - 2rem);
+    filter: drop-shadow(0 0 25pt rgba(0, 0, 0, 0.5));
+    z-index: 100;
+    }
+
+#gallery input[type="checkbox"]:checked+figure::before {
+    display: block;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+}
+
+#gallery input[type="checkbox"]:checked+figure:has(img)::after {
+    display: block;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+}
+
+/* Hide scrollbars in WebKit browsers (Chrome, Safari) */
+#gallery::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar */
+}
+
+/* Hide scrollbars in Firefox */
+#gallery {
+    scrollbar-width: none;
+    /* Hide scrollbar */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE 10+ */
+}
+
+/* General rule to hide scrollbars while preserving scrolling functionality */
+#gallery {
+    overflow: -moz-scrollbars-none;
+    /* Hide scrollbar in older Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar in modern Firefox */
 }

@@ -1,3 +1,11 @@
+:root {
+    --narrow-content-width: min(50vw,50ch);
+    --content-width: min(80vw,70ch);
+    --wide-content-width: min(90vw, 100ch);
+
+    user-select: none;
+}
+
 body > main  {
     min-height: 100vh;
     height: 100vh;
@@ -36,7 +44,7 @@ body > main > section > h1 {
 }
 
 body > main > section :is(h2,h3,h4,h5,h6,p) {
-    max-width: min(80vw,70ch);
+    max-width: var(--content-width);
 }
 
 body > main > section > .sub-section {
