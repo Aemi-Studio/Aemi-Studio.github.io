@@ -456,6 +456,7 @@ a.icon.network::before {
     scroll-behavior: smooth;
     scroll-snap-type: both mandatory;
     border-radius: 0.5rem;
+    overflow-clip-margin: 1rem;
 }
 
 ul#gallery,
@@ -477,6 +478,10 @@ ul#gallery,
     appearance: none;
     padding: 0;
     margin: 0;
+    position: absolute;
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 #gallery :is(figure img, figure video) {
