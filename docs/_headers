@@ -5,7 +5,11 @@
   Access-Control-Allow-Origin: *
   Cross-Origin-Resource-Policy: cross-origin
 
-/*/favicon.*.png
+/*/favicon.ico
+  Access-Control-Allow-Origin: *
+  Cross-Origin-Resource-Policy: cross-origin
+
+/*/favicon.png
   Access-Control-Allow-Origin: *
   Cross-Origin-Resource-Policy: cross-origin
 

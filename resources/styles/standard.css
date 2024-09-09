@@ -1,8 +1,8 @@
 :root {
 
-    --base-font-family: InterVariable, "Inter var", Inter, -apple-system, BlinkMacSystemFont, Lato, Roboto, system-ui, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    --base-font-family: InterVariable, "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Cupertino Text", Lato, Roboto, system-ui, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 
-    --head-font-family: "Inter Display", InterVariable, "Inter var", Inter, -apple-system, BlinkMacSystemFont, Lato, Roboto, system-ui, "Helvetica Neue", HelveticaNeue,Helvetica, Arial, sans-serif;
+    --head-font-family: "Inter Display", InterVariable, "Inter var", Inter,-apple-system, BlinkMacSystemFont, "Cupertino Display", Lato, Roboto, system-ui, "Helvetica Neue", HelveticaNeue,Helvetica, Arial, sans-serif;
 
     --mono-font-family: JetBrainsMonoVariable, "JetBrains Mono", "SFMono-Regular", "Roboto Mono", "Inconsolata", "Menlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Consolas", Courier, "Courier New", monospace;
 

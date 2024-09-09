@@ -439,7 +439,7 @@ a.icon.network::before {
 }
 #gallery :is(figure, img, video) {
     max-height: 300px;
-    max-width: 300px;
+    max-width: unset;
 }
 
 #gallery {
