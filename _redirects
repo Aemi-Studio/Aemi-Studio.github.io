@@ -7,6 +7,9 @@
 /cami-calendar /cami 301
 /cami/testflight https://testflight.apple.com/join/9CWelfzJ 301
 /cami/app-store https://apps.apple.com/app/cami-calendar/id6472549901 301
+/cami/appstore https://apps.apple.com/app/cami-calendar/id6472549901 301
+/cami/store https://apps.apple.com/app/cami-calendar/id6472549901 301
+/cami/download https://apps.apple.com/app/cami-calendar/id6472549901 301
 
 /stations-people-radio /stations 301
 /people-radio /stations 301
@@ -20,6 +23,9 @@
 /nadblocker /nad 301
 /nad/testflight https://testflight.apple.com/join/WtcmUa6d 301
 /nad/app-store https://apps.apple.com/app/nad/id6661016989 301
+/nad/appstore https://apps.apple.com/app/nad/id6661016989 301
+/nad/store https://apps.apple.com/app/nad/id6661016989 301
+/nad/download https://apps.apple.com/app/nad/id6661016989 301
 
 /pasitea /lab/pasitea 301
 /pasitea/testflight https://testflight.apple.com/join/OFtGX8Oy 301
