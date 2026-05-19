@@ -1,5 +1,0 @@
-Contact: mailto:security@aemi.studio
-Expires: 2027-01-01T00:00:00.000Z
-Preferred-Languages: en, fr
-Canonical: https://aemi.studio/.well-known/security.txt
-Canonical: https://aemi.studio/security.txt
