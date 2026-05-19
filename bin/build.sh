@@ -29,24 +29,9 @@ cd "$PROJECT_ROOT"
 step() { printf "\n\033[1;34m▸ %s\033[0m\n" "$*"; }
 
 step "mirror source into docs/"
-rm -rf "$DOCS"
-mkdir -p "$DOCS"
-# Excludes mirror build.fish's old behaviour plus the new build artefacts.
-rsync -a \
-    --exclude=docs \
-    --exclude=.git \
-    --exclude=.github \
-    --exclude=node_modules \
-    --exclude=.bundle \
-    --exclude=source-fonts \
-    --exclude=bin \
-    --exclude=_data \
-    --exclude=build.fish \
-    --exclude=requirements.txt \
-    --exclude='*.DS_Store' \
-    --exclude=.vscode \
-    --exclude='.gitignore' \
-    "$PROJECT_ROOT/" "$DOCS/"
+# Cloudflare Pages' build image doesn't ship rsync, so we use a small
+# Python helper that does the same exclude-driven copy.
+python3 "$SCRIPT_DIR/mirror.py" --src "$PROJECT_ROOT" --dst "$DOCS"
 
 step "substitute SF Symbol placeholders in HTML"
 python3 "$SCRIPT_DIR/inline-symbols.py" --site "$DOCS" --symbols "$PROJECT_ROOT/_data/sfsymbols.json"
