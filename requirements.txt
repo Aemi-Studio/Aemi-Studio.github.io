@@ -1,0 +1,5 @@
+# Python dependencies for bin/subset-fonts.py and bin/inline-symbols.py.
+# bin/build.sh installs these with `pip install --user`; CI installs
+# them once and caches via actions/setup-python.
+fonttools>=4.55
+brotli>=1.1
