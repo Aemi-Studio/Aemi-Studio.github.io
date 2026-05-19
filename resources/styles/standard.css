@@ -65,10 +65,17 @@ html {
 
 body {
     position: relative;
+    /* Use dynamic viewport units when supported so the layout
+       follows the visible viewport on mobile Safari as the URL bar
+       collapses, instead of being clipped to the smaller "small
+       viewport" measurement of 100vh. */
     height: 100vh;
+    height: 100dvh;
     width: 100vw;
+    width: 100dvw;
     max-width: 100%;
     min-height: 100vh;
+    min-height: 100dvh;
     overflow-y: hidden;
 }
 
