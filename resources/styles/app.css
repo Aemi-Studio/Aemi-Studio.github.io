@@ -442,12 +442,24 @@ a.icon.network::before {
     max-width: unset;
 }
 
-/* Force aspect-ratio preservation on gallery imgs/videos. The
-   sibling rule below stretches them via `width: 100%; height: 100%;`
-   to fill the clickable area; object-fit: contain keeps the
-   screenshot inside that box without distortion, regardless of
-   the intrinsic width/height attrs we add at build time. */
+/* Gallery screenshots (and videos):
+   - Pin height at 300px and let width auto-derive from each item's
+     own intrinsic aspect ratio (added at build time via
+     bin/annotate-images.py as `width="W" height="H"` attrs).
+   - max-width: none so the wide iPad/landscape mockups can be wider
+     than the viewport (the horizontal-scroll container is the
+     parent that clips, not the item itself).
+   - object-fit: contain is a defensive belt-and-braces — without
+     it, any future <img>-CSS rule that forces both width and height
+     would silently start stretching the screenshots again.
+   - Important to override the `+ figure img { width: 100%; height: 100% }`
+     rule further down, which would otherwise wreck the aspect
+     ratio. We declare `height: 300px` more specifically here and
+     also set `width: auto`. */
 #gallery :is(img, video) {
+    height: 300px;
+    width: auto;
+    max-width: none;
     object-fit: contain;
     object-position: center;
 }
@@ -499,10 +511,18 @@ ul#gallery,
     filter: drop-shadow(0 0.25rem 0.5rem rgba(0, 0, 0, 0.1));
 }
 
-#gallery input[type="checkbox"]+ :is(figure, figure img, figure video) {
+/* Make the figure (the clickable wrapper) fill the gallery row so
+   the whole tile is the click/tap target. We intentionally DO NOT
+   stretch the img/video to width: 100%; height: 100% — that was the
+   original rule, and it broke aspect ratio once the imgs gained
+   intrinsic width/height attributes. The screenshot sizing comes
+   from the `#gallery :is(img, video)` block above. */
+#gallery input[type="checkbox"] + figure {
     display: block;
     height: 100%;
-    width: 100%;
+    cursor: zoom-in;
+}
+#gallery input[type="checkbox"] + figure :is(img, video) {
     cursor: zoom-in;
 }
 
