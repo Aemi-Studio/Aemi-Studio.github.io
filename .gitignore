@@ -1,1 +1,7 @@
-*/.DS_Store
+.DS_Store
+**/.DS_Store
+docs/
+node_modules/
+.bundle/
+__pycache__/
+*.pyc

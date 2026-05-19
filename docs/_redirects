@@ -38,3 +38,5 @@
 /bilbary/app-store https://testflight.apple.com/join/CRZpt2m3 301
 /lab/bilbary/testflight https://testflight.apple.com/join/CRZpt2m3 301
 /lab/bilbary/app-store https://testflight.apple.com/join/CRZpt2m3 301
+
+/security.txt /.well-known/security.txt 200
