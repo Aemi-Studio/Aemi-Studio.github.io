@@ -1,10 +1,10 @@
 :root {
 
-    --base-font-family: InterVariable, "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Cupertino Text", Lato, Roboto, system-ui, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    --base-font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "Cupertino Pro", system-ui, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 
-    --head-font-family: "Inter Display", InterVariable, "Inter var", Inter,-apple-system, BlinkMacSystemFont, "Cupertino Display", Lato, Roboto, system-ui, "Helvetica Neue", HelveticaNeue,Helvetica, Arial, sans-serif;
+    --head-font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro", "Cupertino Pro", system-ui, "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 
-    --mono-font-family: JetBrainsMonoVariable, "JetBrains Mono", "SFMono-Regular", "Roboto Mono", "Inconsolata", "Menlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Consolas", Courier, "Courier New", monospace;
+    --mono-font-family: ui-monospace, "SF Mono", SFMono-Regular, "JetBrains Mono", "Roboto Mono", "Inconsolata", Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Consolas, Courier, "Courier New", monospace;
 
 
     font-family: var(--base-font-family);
